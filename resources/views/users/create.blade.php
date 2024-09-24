@@ -12,9 +12,9 @@
         @csrf
 
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" class="form-control" required>
-            @error('name')
+            <label for="nama pemain">Nama Pemain</label>
+            <input type="text" name="nama pemain" class="form-control" required>
+            @error('nama pemain')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -26,6 +26,15 @@
                 <div class="text-danger">{{ $message }}</div>
             @enderror
         </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" required>
+            @error('password')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+
 
         <div class="form-group">
             <label for="kategori_id">Category</label>
